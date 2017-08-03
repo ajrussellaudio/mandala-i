@@ -1,5 +1,6 @@
-var Branch = function(nodes) {
+var Branch = function(nodes, radius) {
   this.nodes = nodes;
+  this.radius = radius;
 }
 
 Branch.prototype.move = function() {
@@ -9,12 +10,9 @@ Branch.prototype.move = function() {
 };
 
 Branch.prototype.draw = function() {
-  noFill();
-  ellipse(0, 0, height, height);
   beginShape();
   this.nodes.forEach(function(node) {
-    vertex(node.position.x, node.position.y);
-    
+    vertex(node.position.x, node.position.y);  
   })
   endShape(CLOSE);
 };
