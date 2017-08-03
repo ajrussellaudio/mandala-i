@@ -1,3 +1,3 @@
 # Mandala I
 
-See it at ajrussellaudio.github.io/mandala-i
+See it at https://ajrussellaudio.github.io/mandala-i
